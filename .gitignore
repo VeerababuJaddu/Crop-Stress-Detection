@@ -1,1 +1,6 @@
 *.h5 
+db.sqlite3
+_pycache_/
+*.pyc
+venv/
+env/
