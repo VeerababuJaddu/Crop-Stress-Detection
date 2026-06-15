@@ -79,6 +79,13 @@ The crop stress dataset contains the following classes:
 
 Dataset Link: [Google Drive Dataset](https://drive.google.com/drive/folders/1FDRzB-tTPfhogVK73LSHKfZ-JqiBKPDD?usp=sharing)
 
+## Model Performance
+
+- Model: CNN + MobileNet
+- Test Accuracy: 87.50%
+- Test Loss: 0.36957
+- Classes: BLB, Blast, Healthy, Hispa, Leaf Spot
+
 ## Screenshots
 
 ### Home Page
