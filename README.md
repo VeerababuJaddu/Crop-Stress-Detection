@@ -67,23 +67,6 @@ python manage.py runserver
 http://127.0.0.1:8000/
 ```
 
-## Screenshots
-
-Add project screenshots here:
-
-- Home Page
-- Login Page
-- Registration Page
-- Prediction Page
-- Result Page
-
-## Future Enhancements
-
-- Real-time Crop Monitoring
-- Mobile Application Integration
-- Multiple Crop Disease Detection
-- Cloud Deployment
-
 ## Dataset
 
 The crop stress dataset contains the following classes:
@@ -96,6 +79,47 @@ The crop stress dataset contains the following classes:
 
 Dataset Link:
 https://drive.google.com/drive/folders/1FDRzB-tTPfhogVK73LSHKfZ-JqiBKPDD?usp=sharing
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/Home.png)
+
+### Login Page
+![Login Page](screenshots/login%20page.PNG)
+
+### Registration Page
+![Registration Page](screenshots/registration.PNG)
+
+### Prediction Page
+![Prediction Page](screenshots/prediction%20page.PNG)
+
+## Prediction Results
+
+### BLB Prediction Result
+![BLB](screenshots/Result%20BLB.PNG)
+
+### Blast Prediction Result
+![Blast](screenshots/Result%20BLAST.PNG)
+
+### Healthy Prediction Result
+![Healthy](screenshots/Result%20Healthy.png)
+
+### Hispa Prediction Result
+![Hispa](screenshots/Result%20Hispa.png)
+
+### Leaf Spot Prediction Result
+![Leaf Spot](screenshots/Result%20Leaf_Spot.PNG)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin%20page.PNG)
+
+## Future Enhancements
+
+- Real-time Crop Monitoring
+- Mobile Application Integration
+- Multiple Crop Disease Detection
+- Cloud Deployment
 
 ## Author
 
