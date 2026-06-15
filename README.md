@@ -84,6 +84,19 @@ Add project screenshots here:
 - Multiple Crop Disease Detection
 - Cloud Deployment
 
+## Dataset
+
+The crop stress dataset contains the following classes:
+
+- BLB (Bacterial Leaf Blight)
+- Blast
+- Healthy
+- Hispa
+- Leaf Spot
+
+Dataset Link:
+https://drive.google.com/drive/folders/1FDRzB-tTPfhogVK73LSHKfZ-JqiBKPDD?usp=sharing
+
 ## Author
 
 *Veerababu Jaddu*
