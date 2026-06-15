@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block hero %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<div class="container-mt-5 space">
+    <h2 class="form-title">Admin Login</h2>
+    <p class="text-center form-subtitle">Log in to manage the system.</p>
+
+    <!-- Display Messages -->
+    {% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="POST" action="adminLoginCheck" class="custom-form">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <label for="username">Admin Username :</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        
+        <button type="submit" class="custom-btn">Login</button>
+        
+       
+    </form>
+</div>
+{% endblock %}

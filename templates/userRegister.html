@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block hero %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+
+<div class="container mt-5">
+    <h2 class="text-center form-title">Create Your Account</h2>
+    <p class="text-center form-subtitle">Join us by filling out the information below.</p>
+
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+    <form method="POST" action="register" class="custom-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Enter your name :</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address :</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+            <label for="username">loginid :</label>
+            <input type="text" class="form-control" id="loginid" name="loginid" placeholder="loginid" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number :</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-group">
+            <label for="locality">Locality :</label>
+            <input type="text" class="form-control" id="locality" name="locality" placeholder="Locality" required>
+        </div>
+        <div class="form-group">
+            <label for="state">address :</label>
+            <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block custom-btn">Register</button>
+        <div class="text-center mt-3">
+            <p class="form-footer">Already have an account? <a href="userLogin" class="form-link">Sign In</a></p>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

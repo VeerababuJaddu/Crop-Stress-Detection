@@ -1,0 +1,53 @@
+{% extends 'admin/adminBase.html' %}
+
+{% block hero %}
+<h1>Welcome to Admin Home - Manage Users</h1>
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Registered Users</h2>
+  <div class="table-responsive">
+    <table class="table table-hover table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Login ID</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Locality</th>
+          <th>State</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in data %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.loginid }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.mobile }}</td>
+          <td>{{ user.locality }}</td>
+          <td>{{ user.address }}</td>
+          <td>
+            {% if user.status == 'waiting' %}
+              <span class="badge badge-warning">Waiting</span>
+            {% else %}
+              <span class="badge badge-success">Activated</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if user.status == 'waiting' %}
+              <a href="activateUser?uid={{ user.id }}" class="btn btn-success btn-sm">Activate</a>
+            {% else %}
+              <button class="btn btn-secondary btn-sm" disabled>Activated</button>
+            {% endif %}
+            <a href="deleteUser?uid={{ user.id }}" class="btn btn-danger btn-sm ml-2">Delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

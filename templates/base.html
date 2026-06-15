@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Crop Stress Detection Project</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="sitename">Crop Stress Detection</h1>
+      <nav class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="userLogin">User</a></li>
+          <li><a href="adminLogin">Admin</a></li>
+          <li><a href="userRegister">Registration</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#featured-services">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div class="space"></div>
+  <main>
+    <section class="hero"> 
+      <div class="img-box">
+        
+        <img src="templates/static/cheking-crop-health.jpg.jpg" alt="">
+      </div>
+        <div class="hero-content">
+          {% block hero %}
+          
+          {% endblock %}
+        </div>
+      </div>
+     
+    </section>
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+        <div class="service-item">
+          <div class="icon">🌿</div>
+          <h3>Stress Detection</h3>
+          <p>Identify various types of crop stress (water, nutrient, disease etc.).</p>
+        </div>
+        <div class="service-item">
+          <div class="icon">📸</div>
+          <h3>Image Analysis</h3>
+          <p>Analyze images of crops to detect stress indicators.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon">📊</div>
+          <h3>Data Visualization</h3>
+          <p>Clear and insightful data representation for better understanding.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon">🤖</div>
+          <h3>AI-Powered Predictions</h3>
+          <p>Accurate predictions to support timely interventions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h3>About Us</h3>
+        <p>Our deep learning system helps farmers identify crop stress early, enabling timely intervention and preventing significant yield losses.</p>
+        <ul>
+          <li>Utilizes advanced deep learning models for accurate analysis.</li>
+          <li>Trained on a large and diverse dataset of crop images.</li>
+          <li>Provides actionable insights to improve crop health and yields.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 MSL Corporations. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
