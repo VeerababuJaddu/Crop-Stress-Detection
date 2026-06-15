@@ -77,8 +77,7 @@ The crop stress dataset contains the following classes:
 - Hispa
 - Leaf Spot
 
-Dataset Link:
-https://drive.google.com/drive/folders/1FDRzB-tTPfhogVK73LSHKfZ-JqiBKPDD?usp=sharing
+Dataset Link: [Google Drive Dataset](https://drive.google.com/drive/folders/1FDRzB-tTPfhogVK73LSHKfZ-JqiBKPDD?usp=sharing)
 
 ## Screenshots
 
