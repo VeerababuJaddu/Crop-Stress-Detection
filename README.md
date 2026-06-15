@@ -1,15 +1,15 @@
 # Crop-Stress-Detection
-A Deep Learning and Django-based web application for crop stress detection and plant health analysis using image classification techniques.
+A Deep Learning and Django-based web application for crop stress detection and plant health analysis. The system uses CNN + MobileNet to classify crop images into BLB, Blast, Healthy, Hispa, and Leaf Spot categories, providing accurate predictions with confidence scores through a user-friendly web interface.
 
 ## Features
 
 - User Registration and Login
-- Crop Image Upload
-- Deep Learning-Based Crop Stress Detection
-- Plant Health Analysis
-- Prediction Results Dashboard
-- Admin Management Panel
-- User-Friendly Interface
+- Crop Image Upload for Disease Analysis
+- CNN + MobileNet Based Crop Stress Classification
+- Detection of BLB, Blast, Healthy, Hispa and Leaf Spot
+- Prediction Confidence Score Display
+- Admin Management Dashboard
+- User-Friendly Web Interface
 
 ## Technologies Used
 
@@ -39,26 +39,30 @@ Crop-Stress-Detection/
 
 ### Clone Repository
 
-bash
+```bash
 git clone https://github.com/VeerababuJaddu/Crop-Stress-Detection.git
+```
 
 
 ### Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
+```
 
 
 ### Run Database Migrations
 
-bash
+```bash
 python manage.py migrate
+```
 
 
 ### Start Development Server
 
-bash
+```bash
 python manage.py runserver
+```
 
 
 ### Open Browser
